@@ -1,0 +1,198 @@
+// 100: Thin
+// 200: Extra Light (Ultra Light)
+// 300: Light
+// 400: Normal
+// 500: Medium
+// 600: Semi Bold (Demi Bold)
+// 700: Bold
+// 800: Extra Bold (Ultra Bold)
+// 900: Black (Heavy)
+	
+// USER VARIABLES SECTION
+
+$accent: #E30611 // Accent Color
+$fontsize: 16px // Body Font Size
+//$textcolor: #333 // Text Color
+$lineheight: 1.65 // Document Line Height
+$userfont: MTSSans, sans-serif // User Font Family
+$systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif // System Font Family
+
+$text-headline:#000000
+$text-primary:#1d2023
+$text-secondary:#626c77
+$text-tertiary:#969fa8
+$text-inverted:#ffffff
+$text-positive:#12b23f
+$text-negative:#eb4a13
+$text-primary-link:#007cff
+$text-secondary-link:#969fa8
+
+$background-primary:#ffffff
+$background-primary-elevated:#F7F7F7
+$background-modal:#ffffff
+$background-stroke:rgba(188, 195, 208, 0.5)
+$background-secondary:#f2f3f7
+$background-secondary-elevated:#ffffff
+$background-inverted:#1d2023
+$background-overlay:rgba(29, 32, 35, 0.4)
+$background-hover:rgba(188, 195, 208, 0.25)
+$background-navbar-ios:rgba(255, 255, 255, 0.92)
+$icons-primary:#000000
+$icons-secondary:#969fa8
+$icons-tertiary:#bbc1c7
+$icons-filter-primary:brightness(0) saturate(100%) invert(0%) sepia(90%) saturate(7500%) hue-rotate(59deg) brightness(105%) contrast(111%)
+$icons-filter-primary-link:brightness(0) saturate(100%) invert(47%) sepia(65%) saturate(6818%) hue-rotate(199deg) brightness(102%) contrast(110%)
+$icons-filter-brand-red:brightness(0) saturate(100%) invert(11%) sepia(98%) saturate(6437%) hue-rotate(354deg) brightness(89%) contrast(101%)
+$icons-filter-secondary:brightness(0) saturate(100%) invert(66%) sepia(19%) saturate(166%) hue-rotate(169deg) brightness(94%) contrast(83%)
+$icons-filter-tertiary:brightness(0) saturate(100%) invert(96%) sepia(2%) saturate(1331%) hue-rotate(180deg) brightness(87%) contrast(77%)
+$icons-filter-tertiary-active:brightness(0) saturate(100%) invert(97%) sepia(4%) saturate(158%) hue-rotate(191deg) brightness(98%) contrast(98%)
+$icons-filter-greyscale-0:brightness(0) saturate(100%) invert(100%) sepia(8%) saturate(31%) hue-rotate(262deg) brightness(107%) contrast(110%)
+$icons-filter-stroke:brightness(0) saturate(100%) invert(40%) sepia(10%) saturate(282%) hue-rotate(177deg) brightness(91%) contrast(89%)
+$icons-filter-inactive:brightness(0) saturate(100%) invert(96%) sepia(5%) saturate(221%) hue-rotate(176deg) brightness(95%) contrast(90%)
+$icons-filter-none-to-primary:none
+$icons-filter-inverted:brightness(0) saturate(100%) invert(6%) sepia(3%) saturate(2892%) hue-rotate(169deg) brightness(101%) contrast(86%)
+$icons-filter-none-to-primary:none
+$controls-primary-active:#e30611
+$controls-primary-active-hover:#d40610
+$controls-secondary-active:#1d2023
+$controls-tertiary-active:#f2f3f7
+$controls-tertiary-active-hover:#e2e5eb
+$controls-inactive:rgba(188, 195, 208, 0.5)
+$controls-alternative:#ffffff
+$controls-active-tabbar:#e30611
+$controls-inactive-tabbar:#aeb5bd
+$accent-active:#007cff
+$accent-positive:#26cd58
+$accent-warning:#fac031
+$accent-negative:#f95721
+$brand-mts-red:#e30611
+$constant-greyscale-900:#000000
+$constant-greyscale-800:#1d2023
+$constant-greyscale-700:#2c3135
+$constant-greyscale-600:#434a51
+$constant-greyscale-500:#626c77
+$constant-greyscale-400:#969fa8
+$constant-greyscale-300:#bbc1c7
+$constant-greyscale-200:#e2e5eb
+$constant-greyscale-100:#f2f3f7
+$constant-greyscale-0:#ffffff
+$constant-darkest-blackberry:#002094
+$constant-dark-blackberry:#003db7
+$constant-normal-blackberry:#014fce
+$constant-light-blackberry:#6384e0
+$constant-lightest-blackberry:#e7eafa
+$constant-darkest-blueberry:#0048aa
+$constant-dark-blueberry:#007cff
+$constant-normal-blueberry:#0097fd
+$constant-light-blueberry:#45b6fc
+$constant-lightest-blueberry:#e1f3fe
+$constant-darkest-mint:#00724d
+$constant-dark-mint:#03a17b
+$constant-normal-mint:#00c19b
+$constant-light-mint:#00d9bc
+$constant-lightest-mint:#dff9f5
+$constant-darkest-apple:#027722
+$constant-dark-apple:#04aa42
+$constant-normal-apple:#26cd58
+$constant-light-apple:#74df8b
+$constant-lightest-apple:#e8faeb
+$constant-darkest-lime:#808201
+$constant-dark-lime:#a6c100
+$constant-normal-lime:#c1eb1d
+$constant-light-lime:#d3f36b
+$constant-lightest-lime:#f8fee7
+$constant-darkest-banana:#f37f19
+$constant-dark-banana:#fac031
+$constant-normal-banana:#fbe739
+$constant-light-banana:#fdf177
+$constant-lightest-banana:#fffde8
+$constant-darkest-orange:#ba360a
+$constant-dark-orange:#e04a17
+$constant-normal-orange:#f95721
+$constant-light-orange:#ffa080
+$constant-lightest-orange:#fbe9e7
+$constant-darkest-raspberry:#8e003f
+$constant-dark-raspberry:#c51345
+$constant-normal-raspberry:#ea1f49
+$constant-light-raspberry:#f55f7e
+$constant-lightest-raspberry:#ffe4e9
+$constant-darkest-cranberry:#7f3363
+$constant-dark-cranberry:#bb4079
+$constant-normal-cranberry:#e54887
+$constant-light-cranberry:#e677ad
+$constant-lightest-cranberry:#f9e7f0
+$constant-darkest-plum:#471c61
+$constant-dark-plum:#6d2d79
+$constant-normal-plum:#883888
+$constant-light-plum:#a86ea7
+$constant-lightest-plum:#f0e7f08b
+
+
+// IMPORT SECTION
+
+@import 'node_modules/bootstrap/scss/bootstrap-reboot.scss' // Bootstrap Reboot collection
+@import 'node_modules/bootstrap/scss/mixins/_breakpoints.scss' // Bootstrap Breakpoints mixin
+@import 'node_modules/bootstrap/scss/bootstrap-grid.scss' // Optional Bootstrap Grid
+@import 'node_modules/bootstrap/scss/_utilities.scss' // Optional Bootstrap Utilities
+// @import 'node_modules/bootstrap/scss/utilities/_sizing.scss' // Optional Bootstrap Utilites
+
+// FONTS LOAD SECTION
+
+@mixin font($fname, $fstyle, $fweight, $furl)
+	@font-face
+		font-family: $fname
+		font-style: $fstyle
+		font-weight: $fweight
+		src: url($furl) format('woff2')
+
+
+@include font('MTSsans,Arial', normal, 400, '../fonts/MTSSans-Regular.woff2')
+@include font('MTSsans,Arial', normal, 500, '../fonts/MTSSans-Medium.woff2')
+@include font('MTSsans,Arial', normal, 700, '../fonts/MTSSans-Bold.woff2')
+@include font('MTSsans,Arial', normal, 800, '../fonts/MTSSans-Black.woff2')
+@include font('MTSsans,Arial', normal, 900, '../fonts/MTSSans-UltraWide.woff2')
+
+
+// GENERAL DOCUMENT STYLES
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+input, textarea
+	outline: none
+	&:focus:required:invalid
+		border-color: red
+	&:required:valid
+		border-color: green
+
+html
+	font-size: $fontsize
+
+body
+	font-family: $userfont
+	line-height: $lineheight
+	color: $text-primary
+	min-width: 320px
+	position: relative
+	overflow-x: hidden
+	box-sizing: border-box
+
+.img-responsive
+	max-width: 100%
+
+.visually-hidden
+	position: absolute
+	width: 1px
+	height: 1px
+	margin: -1px
+	border: 0
+	padding: 0
+	clip: rect (0 0 0 0)
+	overflow: hidden
+
+
+      
